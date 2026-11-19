@@ -17,39 +17,19 @@ let ageNumber = Number(age)
 console.log(ageNumber + 5);
 console.log(typeof ageNumber); // number
 
-// -------------------------------------------
-// SISINON SI
-// if (condition) { ... } else if (autre condition) { ... } else { ... }
-// === compare la valeur ET le type
-if (ageNumber < 18){
-    console.log("Accès ");
+// -----------------------------------------------------
 
-}else
-if(ageNumber === 5){
+let id = prompt("Entrez votre id")
+// si id commence par ad.... c'est un admin
+// si id commence par us.... c'est un user
 
+
+if(id.startsWith("ad")){
+    console.log(`Bienvenue administrateur ${id} `);
+}else 
+    if(id.startsWith("us")){
+    console.log(`Bienvenue utilisateur ${id}`);
+}else{
+    console.log("Votre identifiant est incorrecte");
+    
 }
-
-// SELONQUE
-// switch compare "key" à chaque "case"
-// break : sort du switch (sinon on continue dans le case suivant)
-// default : exécuté si aucun case ne correspond (équivalent de "AUTRE")
-switch (key) {
-    case value:
-
-        break;
-
-    default:
-        break;
-}
-
-// TantQue
-// La condition est testée AVANT chaque tour : 0 tour possible
-while (condition) {
-
-}
-
-// Faire TANTQUE
-// La condition est testée APRÈS chaque tour : au moins 1 tour
-do {
-
-} while (condition);

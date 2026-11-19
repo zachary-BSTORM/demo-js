@@ -171,7 +171,11 @@ let ageNumber = Number(age)
 
 console.log(typeof ageNumber); // Number
 
+// parseint() : conversion en number (entier)
 
+let valueInt = parseInt("54")
+// parsefloat() : conversion en number (décimale)
+let valueFloat = parseFloat("54.65")
 
 
 

@@ -14,7 +14,6 @@ let valueB = 8
 // SI ... FAIRE
 if(valueA < valueB){
     console.log("A est plus petit");
-    
 }
 
 // SI ... FAIRE ... SINON FAIRE ...
@@ -80,6 +79,7 @@ switch (role) {
 let a = 10
 
 let resultTernaire = a < 8 ?  "a est plus petit" : "a n'est pas plus petit" 
+// if a < 8 ?{  "a est plus petit" }sinon:{ "a n'est pas plus petit" }
 
 console.log(resultTernaire);
 

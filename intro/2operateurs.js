@@ -114,17 +114,17 @@ console.log(++value); // value vaut 4, affiche 4
 // post-decrementation
 // value-- : utilise la valeur PUIS enlève 1
 value-- // value vaut 3
-console.log(value++); // affiche 3, puis value vaut 4
+console.log(value--); // affiche 3, puis value vaut 4
 
 
 // pre-decrementation
 // --value : enlève 1 PUIS utilise la valeur
 --value // value vaut 3
-console.log(++value); // value vaut 4, affiche 4
+console.log(--value); // value vaut 4, affiche 4
 
 
 // opérateurs d'affectation combinés : value += 1 équivaut à value = value + 1
-value += 1 // 4 + 1 -> 5
+value += 1 // value = value + 1
 
 value -= 1 // 5 - 1 -> 4
 

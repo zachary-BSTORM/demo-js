@@ -45,8 +45,8 @@ let valueArray = ["hello" , "javascript"]
 
 console.log(valueArray.join(" - "));
 
-// Split(séparateur) : Permet de transformer un String en Array
 
+// Split(séparateur) : Permet de transformer un String en Array
 let valueSplit = "hello javascript !"
 
 let resultSplit = valueSplit.split(" ")
@@ -68,6 +68,7 @@ let message = "hello javascript !"
 console.log(message.length);
 
 
+
 // startwith() : permet de tester si un String commence par un String précis
 // la methode est case sensitive ( sensible au majuscule et minuscule )
 // la methode renvoie un Booléen
@@ -82,6 +83,7 @@ console.log(valueTest.startsWith("voici"));
 let valueIndex = "hello test "
 
 console.log(valueIndex.indexOf('t'));
+console.log(valueIndex.indexOf('test'));
 
 
 
