@@ -55,25 +55,26 @@ console.log(typeof variableString);
 let variableBool = false
 console.log(typeof variableBool);
 
-// Undefined : permet de définir une valeur à non défini
+// Undefined :  absence de valeur
 let valueInconnu = undefined
 console.log(typeof valueInconnu);
 
-// null : absence de valeur
+// null : permet de définir une valeur à non défini
 let valueNull = null
 console.log(typeof valueNull);
+
 
 // NAN : Not a number
 let valueNaN = NaN
 console.log(typeof valueNaN);
 
 // la comparaison ne permet pas de détecter le NaN
-console.log( NaN == NaN);
+console.log( NaN === NaN);
 // Obligation d'utiliser la methode : isNaN()
 console.log( isNaN(NaN));
 
-// objet complexe
 
+// objet complexe
 let user = {
     name : "bob",
     age : 35,
@@ -85,10 +86,13 @@ let user = {
                 }
 
 }
+// . -> accesseur : permet d'accéder au attributs de l'objet 
+console.log(user.name);
+
 
 
 // Arrays
-let myArrayNumber = [1,2,3,4,5,6]
+let myArrayNumber  = [1,2,3,4,5,6]
 let myArrayString = ["1","2","3","4"]
 let myArrayObj = [
     {
@@ -125,6 +129,22 @@ console.error("error");
 // prompt ( demande une information à l'utilisateur)
 // let nameInput = prompt("Entrez votre nom : ")
 // console.log(nameInput);
-console.log("fin");
+
+
+// ----------------------------------------------------
+// Les valeurs récupérer par le prompt sont en "String" il sera nécéssaire de convertir la valeur pour certaines opérations
+
+let age = prompt("Entrez votre age : ")
+
+console.log(typeof age); // String
+
+// Conversion en Number
+
+let ageNumber = Number(age)
+
+console.log(typeof ageNumber); // Number
+
+
+
 
 

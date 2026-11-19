@@ -81,15 +81,39 @@ let c3 = !true; // false
 
 // ------------------------------------------------------
 
-let age = prompt("Entrez votre age : ")
-console.log(typeof age); // string
+
+// raccourci d'ecriture
+let value = 0
+
+// post-incrementation
+value++
+console.log(value++);
 
 
-// conversion de types 
-
-// number
-let ageNumber = Number(age)
-
+// pre-incrementation
+++value
+console.log(++value);
 
 
+// post-decrementation
+value--
+console.log(value++);
+
+
+// pre-incrementation
+--value
+console.log(++value);
+
+
+value += 1
+
+value -= 1
+
+value /= 5
+
+value *= 5
+
+value **= 5
+
+value %= 5
 
