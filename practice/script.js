@@ -85,17 +85,3 @@
 // // --------------------------------------------------
 
 
-let userScore = {
-    score : 15
-}
-
-let result = userScore.scores ?? 0
-
-console.log(result);
-
-
-let infos = null
-
-let nom = infos ?? "inconnu"
-
-console.log(nom);
