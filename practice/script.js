@@ -1,70 +1,95 @@
-/*
-● Utilisez « prompt » pour saisir une note sur 20.
-
-Si l’utilisateur n’a rien encodé ou a saisi une valeur en dehors des valeurs autorisées,
-stockez « null » dans la variable.
-
-● Affichez ensuite la note et son appréciation en utilisant un « alert »,
-selon les seuils suivants :
-○ ≥ 18 → "Excellent"
-○ ≥ 14 → "Bien"
-○ ≥ 10 → "Suffisant"
-○ < 10 → "Insuffisant"
-Si la note vaut « null », affichez le message : « Résultat invalide encodé ».
-*/
-// let resultat;
-// let noteStr = prompt("Entrez une note : ")
-
-// let noteNumber = parseInt(noteStr)
-
-// if(noteStr.length < 1  || noteNumber >= 20 || noteNumber <= 0){
-//     resultat = null
-// }else{
-
-//     switch (true) {
-//         case noteNumber > 18:
-//                 resultat = "Excellent"
-//             break;
-
-//         case noteNumber > 14:
-//                 resultat = "Bien"
-//             break;
-
-//         case noteNumber > 10:
-//                 resultat = "Suffisant"
-//             break;
-
-//         default:
-//             resultat = "Insuffisant"
-//             break;
-//     }
-// }
-
-// alert(`${resultat === null ? "Résultat invalide encodé" : `Le résultat est ${resultat}`}`);
+// utlisation du querySelector pour séléctionner un élément du dom
+let maDiv = document.querySelector("#div")
 
 
+// récupération d'un élément par sa balise
+let p = document.querySelector("p")
+console.log(p);
+
+// récupération d'un élément par son id 
+let pId = document.querySelector("#monParag")
+console.log(pId);
+
+// récupération d'un élément par une classe
+let pClass = document.querySelector(".pClass")
+console.log(pClass);
 
 
+// récupération de plusieurs éléments du DOM
+let lis = document.querySelectorAll("li")
+console.log(lis);
 
-// ----------------------------------------------------------------------
-// Calculatrice simple
+console.log(lis[0]);
 
-// nb1 - operator - nb2 : prompt()
-
-// opérations = + - * /
-
-// afficher le calcul complet lors de l'affichage du résultat
-
-
-let result = prompt("Entrez le calcul à éffectuer en séparant les valeurs et opérateur par des espaces");
+lis.forEach((li) => {
+    li.textContent = "new Value"
+})
 
 
-resultArray = result.split(" ")
+// let exId = document.getElementById()
+// let exClass = document.getElementsByClassName()
+// let exTag = document.getElementsByName()
+
+// ----------------------------------------------------------
+
+let pHello = document.querySelector("#pHello")
+
+console.log(pHello);
+
+// l'on peut accéder à la valeur contenu dans notre balise et la modifier
+pHello.textContent = "hello"
+
+// Risque de modification du DOM !!!
+// pHello.innerHTML = '<strong>hello</strong>'
+
+// il est aussi possible de modifier le style directement
+// pHello.style.backgroundColor = "red"
+// pHello.style.padding = "12px"
+// pHello.style.textAlign = "center"
 
 
-console.log(resultArray[0]);
-console.log(resultArray[1]);
-console.log(resultArray[2]);
+// Accès et modification des classes css
+// Afficher les classes d'un élément
+console.log(pHello.classList);
+
+// Ajouter une classe à un élément
+pHello.classList.add("bg-green")
+console.log(pHello.classList);
+
+// Retirer une classe
+pHello.classList.remove("bg-green")
+console.log(pHello.classList);
+
+// Ajout ou suppression d'une classe si elle es présente ou pas
+pHello.classList.toggle("bg-red")
+console.log(pHello.classList);
+pHello.classList.toggle("bg-red")
+console.log(pHello.classList);
+pHello.classList.toggle("bg-red")
+
+// Remplacer une classe par une autre
+pHello.classList.replace("bg-red","bg-green")
+console.log(pHello.classList);
+
+// ------------------------------------------------------
+
+// Ajouter un élément dans le DOM
+
+// 1er étape : crée un élément
+let newP = document.createElement("p")
+
+//2eme étape : modifier l'élément
+newP.textContent = "Voici un nouveau paragraphe"
+newP.style.color = 'blue'
 
 
+// 3iem étape : Pour l'ajouter dans le dom
 
+    // 3.1 : récupérer un élément du DOM ( si vide le body )µ
+    let container = document.querySelector("#container")
+
+    // 3.2 : Ajouter l'élément crée dans l'élément du dom 
+    container.appendChild(newP)
+
+
+    

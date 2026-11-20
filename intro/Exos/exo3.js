@@ -14,3 +14,35 @@ selon les seuils suivants :
 ○ null → "Résultat invalide encodé"
 
 */
+
+
+let resultat;
+let noteStr = prompt("Entrez une note : ")
+
+let noteNumber = parseInt(noteStr)
+
+if(noteStr.length < 1  || noteNumber >= 20 || noteNumber <= 0){
+    resultat = null
+}else{
+
+    switch (true) {
+        case noteNumber > 18:
+                resultat = "Excellent"
+            break;
+
+        case noteNumber > 14:
+                resultat = "Bien"
+            break;
+
+        case noteNumber > 10:
+                resultat = "Suffisant"
+            break;
+
+        default:
+            resultat = "Insuffisant"
+            break;
+    }
+}
+
+alert(`${resultat === null ? "Résultat invalide encodé" : `Le résultat est ${resultat}`}`);
+
