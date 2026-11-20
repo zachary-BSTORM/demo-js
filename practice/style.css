@@ -5,3 +5,15 @@
 .bg-green{
     background-color: green;
 }
+
+.m-auto{
+    margin: auto;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
